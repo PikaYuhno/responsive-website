@@ -24,7 +24,10 @@ ul li {
   display: flex;
 }
 
-body {
+header {
   background: url("/resources/imgs/wallpaperflare.com_wallpaper.jpg") no-repeat
-    center center fixed;
+    center center;
+    height: 700px;
 }
+
+
