@@ -3,29 +3,87 @@
   padding: 0;
 }
 
-ul li {
+.navbar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.nav-titel {
+  align-items: center;
+  display: flex;
+}
+
+.nav-links ul {
+  display: flex;
+  margin-top: 10px;
+}
+
+.nav-links ul li {
   list-style: none;
   padding: 15px;
   font-family: "Open Sans", sans-serif;
 }
-.navbar {
+
+.link {
+  color: black;
+  text-decoration: none !important;
+}
+.nav-btns {
+  display: flex;
+  align-items: center;
+}
+
+#line {
+  background-color: black;
+  width: 2px;
+  height: 39px;
+}
+
+#btnContact:hover {
+  background-color: black;
+  color: white;
+}
+
+#btnContact {
+  border-color: black;
+  color: black;
+}
+
+#globe:hover {
+  cursor: pointer;
+}
+
+.art-home {
+  height: 90vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.nav-titel {
-  font-family: "Rubik", sans-serif;
-  display: flex;
-  align-items: center;
+.sec-html {
+  width: 400px;
+  text-align: left;
 }
 
-.nav-links ul {
-  display: flex;
+img {
+  height: auto;
+  width: 500px;
 }
 
-header {
-  background: url("/resources/imgs/wallpaperflare.com_wallpaper.jpg") no-repeat
-    center center;
-    height: 800px;
+#btnMF:hover {
+  background-color: black;
+  color: white;
+}
+
+#btnMF {
+  border-color: black;
+  color: black;
+}
+
+.vert-line {
+  height: 0.5px;
+  width: 700px;
+  background-color: black;
 }
