@@ -17,7 +17,6 @@
 
 .nav-links ul {
   display: flex;
-  margin-top: 10px;
 }
 
 .nav-links ul li {
@@ -33,6 +32,7 @@
 .nav-btns {
   display: flex;
   align-items: center;
+  float: right;
 }
 
 #line {
@@ -86,4 +86,10 @@ img {
   height: 0.5px;
   width: 700px;
   background-color: black;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-btns {
+    display: none;
+  }
 }
