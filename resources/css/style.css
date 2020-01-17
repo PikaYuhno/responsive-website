@@ -88,8 +88,60 @@ img {
   background-color: black;
 }
 
+/* ****************** CONTACT ****************** */
+.contact{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 23px;
+    border-bottom: 1px solid grey;
+    font-family: 'Open Sans', sans-serif;
+    height: 500px;
+}
+
+.contact form{
+    margin-top: 50px;
+}
+
+.contact input{
+    min-width: 50%;
+    padding: 7px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit:hover {
+    background-color: #A9A9A9;
+    cursor: pointer;
+}
+
+.contact #area{
+    height: 100px;
+}
+
 @media only screen and (max-width: 991px) {
   .nav-btns {
     display: none;
+  }
+  .art-home{
+    margin-top: 35px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+  }
+
+  .sec-html{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel-container{
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 }

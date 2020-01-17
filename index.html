@@ -2,317 +2,245 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-    <title>Document</title>
-    <style>
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            height: 25px;
-            width: 25px;
-            outline: black;
-            background-size: 100%, 100%;
-            border-radius: 50%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <title>HTML Project</title>
+  <style>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 25px;
+      width: 25px;
+      outline: black;
+      background-size: 100%, 100%;
+      border-radius: 50%;
 
-            background-image: none;
-        }
+      background-image: none;
+    }
 
-        .carousel-control-next-icon:after {
-            content: '>';
-            font-size: 20px;
-            color: grey;
-        }
+    .carousel-control-next-icon:after {
+      content: '>';
+      font-size: 20px;
+      color: grey;
+    }
 
-        .carousel-control-prev-icon:after {
-            content: '<';
-            font-size: 20px;
-            color: grey;
-        }
-    </style>
+    .carousel-control-prev-icon:after {
+      content: '<';
+      font-size: 20px;
+      color: grey;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="nav-titel">
-                <h2 style="margin-right: 10px;">HTML</h2>
-                <i class="fab fa-html5 fa-2x"></i>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-titel">
+        <h2 style="margin-right: 10px;">HTML</h2>
+        <i class="fab fa-html5 fa-2x"></i>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-links">
+          <ul class="navbar-nav mr-auto">
+            <li><a href="informationen.html" class="link">Informationen</a></li>
+            <li><a href="HTML Aufbau.html" class="link">HTML Aufbau</a></li>
+            <li><a href="" class="link">Tabellen</a></li>
+            <li><a href="" class="link">CSS</a></li>
+            <li><a href="" class="link">Flexbox</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact">
+        <div id="line" style="margin: 0 15px;"></div>
+        <i class="fas fa-globe fa-2x" id="globe"></i>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <article>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <article class="art-home">
+              <div class="sec-html">
+                <h4>HTML</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                  et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF">
+              </div>
+              <img src="resources/imgs/html5.png" alt="HTML pic" class="carousel-container">
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="art-home">
+              <section class="sec-html">
+                <h4>CSS</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                  et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF">
+              </section>
+              <img src="resources/imgs/css-logo.png" alt="HTML pic" class="carousel-container">
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="art-home">
+              <section class="sec-html">
+                <h4>JavaScript</h4>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                  et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF">
+              </section>
+              <img src="resources/imgs/js-logo.png" alt="HTML pic" class="carousel-container">
+            </article>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-center">Algemeine Informationen zu HTML 5</h1>
+            <p class="text-center">
+              HTML steht für Hypertext Markup Language.
+              HTML verwendet das ASCII-Format und kann deswegen auf allen Computern verwendet werden.
+              HTML ist eine Auszeichnungssprache(Beschreibungssprache für Dokumente), welche aus
+              SGML(Standard Generalized Markup Language) enstand und im CERN entwickelt wurde.
+              Das W3-Consortium ist für die Entwicklung verantwortlich.
+            </p>
+            <p class="text-center">
+              <input class="btn btn-outline-primary" type="button" href="" value="Mehr Erfahren" />
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="art-editors">
+      <div class="art-editors-titel">
+        <h3 class="text-center">Gute Editoren für HTML</h3>
+      </div>
+      <br> <br>
+      <div class="art-editors-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+
+              <img src="resources/imgs/vs-code-logo.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title text-center">Visual Studio Code</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="nav-links">
-                    <ul class="navbar-nav mr-auto">
-                        <li><a href="informationen.html" class="link">Informationen</a></li>
-                        <li><a href="HTML Aufbau.html" class="link">HTML Aufbau</a></li>
-                        <li><a href="" class="link">Tabellen</a></li>
-                        <li><a href="" class="link">CSS</a></li>
-                        <li><a href="" class="link">Flexbox</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-4">
+
+              <img src="resources/imgs/atom.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Atom</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+
             </div>
-            <div class="nav-btns">
-                <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact">
-                <div id="line" style="margin: 0 15px;"></div>
-                <i class="fas fa-globe fa-2x" id="globe"></i>
+            <div class="col-md-4">
+
+              <img src="resources/imgs/submile-text-logo.png" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title text-cener">Sublime Text</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <br><br><br><br><br><br><br>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+
+      </tbody>
+    </table>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <form id="f">
+      <input type="text" class="in" placeholder="Name" id="name"> <br>
+      <input type="text" class="in" placeholder="E-Mail" id="email"> <br>
+      <input type="text" id="area" placeholder="Message" id="message"> <br>
+      <input type="submit" id="submit">
 
 
-    <main>
-        <article>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <article class="art-home">
-                            <section class="sec-html">
-                                <h4>HTML</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
-                                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren"
-                                    style="width: 400px" id="btnMF">
-                            </section>
-                            <section>
-                                <img src="resources/imgs/html5.png" alt="HTML pic">
-                            </section>
-                        </article>
-                    </div>
-                    <div class="carousel-item">
-                        <article class="art-home">
-                            <section class="sec-html">
-                                <h4>CSS</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
-                                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren"
-                                    style="width: 400px" id="btnMF">
-                            </section>
-                            <section>
-                                <img src="resources/imgs/css-logo.png" alt="HTML pic">
-                            </section>
-                        </article>
-                    </div>
-                    <div class="carousel-item">
-                        <article class="art-home">
-                            <section class="sec-html">
-                                <h4>JavaScript</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                                    et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
-                                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren"
-                                    style="width: 400px" id="btnMF">
-                            </section>
-                            <section>
-                                <img src="resources/imgs/js-logo.png" alt="HTML pic">
-                            </section>
-                        </article>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </article>
-        <article>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center">Algemeine Informationen zu HTML 5</h1>
-                        <p class="text-center">
-                            HTML steht für Hypertext Markup Language.
-                            HTML verwendet das ASCII-Format und kann deswegen auf allen Computern verwendet werden.
-                            HTML ist eine Auszeichnungssprache(Beschreibungssprache für Dokumente), welche aus
-                            SGML(Standard Generalized Markup Language) enstand und im CERN entwickelt wurde.
-                            Das W3-Consortium ist für die Entwicklung verantwortlich.
-                        </p>
-                        <p class="text-center">
-                            <input class="btn btn-outline-primary" type="button" href="" value="Mehr Erfahren" />
+    </form>
 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article class="art-editors">
-            <div class="art-editors-titel">
-                <h3 class="text-center">Gute Editoren für HTML</h3>
-            </div>
-            <br> <br>
-            <div class="art-editors-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
+  </section>
 
-                            <img src="resources/imgs/vs-code-logo.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Visual Studio Code</h5>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4">
-
-                            <img src="resources/imgs/atom.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Atom</h5>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-
-                        </div>
-                        <div class="col-md-4">
-
-                            <img src="resources/imgs/submile-text-logo.png" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title text-cener">Sublime Text</h5>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </main>
-
-    <br><br><br><br><br><br><br>
-
-    <div class="container">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Message</th>
-                </tr>
-            </thead>
-            <tbody id="table-body">
-
-            </tbody>
-        </table>
-    </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <div class="container">
-        <form id="f">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="text" class="form-control" id="email" name="email" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <input type="text" class="form-control" id="message" placeholder="Message">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
-<!--Footer-->
-<footer class="text-center border-top border-dark">
+  <!--Footer-->
+  <footer class="text-center border-top border-dark">
     <br>
     <p>
-        <a class="link" href="impressum.html"><h5>Impressum</h5></a>
+      <a class="link" href="impressum.html">
+        <h5>Impressum</h5>
+      </a>
     </p>
     <br>
-</footer>
+  </footer>
 
-    <script>
-        const state = {
-            data: []
-        };
-        async function fetchData() {
-            const res = await fetch("http://localhost:8080/getMessages", {
-                method: 'GET',
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            });
-            console.log("res: ", res);
-            const data = await res.json();
-            state.data = data;
-        }
-
-
-        function maketable() {
-            let table = document.getElementById("table-body");
-            for (let i = 0; i < state.data.length; i++) {
-                var row = document.createElement("tr");
-                var col1 = document.createElement("td");
-                var col2 = document.createElement("td");
-                var col3 = document.createElement("td");
-
-                row.appendChild(col1);
-                row.appendChild(col2);
-                row.appendChild(col3);
-
-                col1.innerText = state.data[i].name;
-                col2.innerText = state.data[i].email;
-                col3.innerText = state.data[i].message;
-
-                table.appendChild(row);
-            }
-        }
-
-        fetchData();
-        setTimeout(maketable, 3000);
-
-        document.getElementById("f").addEventListener('submit', function (evt) {
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-            const messageOBJ = { "name": name, "email": email, "message": message };
-            console.log(messageOBJ);
-            fetch("http://localhost:8080/insertMessage", {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(messageOBJ)
-            }).then(res => {
-                console.log(res);
-            });
-        });
-
-
-    </script>
+  <script src="resources/js/app.js"></script>
 </body>
 
 </html>
