@@ -17,6 +17,7 @@
 
 .nav-links ul {
   display: flex;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links ul li {
@@ -66,6 +67,11 @@
   width: 400px;
   text-align: left;
 }
+
+.sec-html p{
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 img {
   height: auto;
@@ -117,7 +123,7 @@ img {
     cursor: pointer;
 }
 
-.contact #area{
+.contact .area{
     height: 100px;
 }
 
@@ -127,7 +133,7 @@ img {
   }
   .art-home{
     margin-top: 35px;
-    height: 100vh;
+    height: 110vh;
     justify-content: center;
     align-items: center;
     text-align: center;

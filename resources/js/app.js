@@ -14,6 +14,7 @@ async function fetchData() {
 }
 
 
+
 function maketable() {
   let table = document.getElementById("table-body");
   for (let i = 0; i < state.data.length; i++) {
@@ -32,12 +33,18 @@ function maketable() {
     col3.innerText = state.data[i].message;
 
     table.appendChild(row);
+
+    var s = "<div class= 'container' style='margin-top: 50px'><div class='ui comments'><h3 class='ui dividing header'>Comments</h3><div class='comment'><a class='avatar'><img src='resources/imgs/profile.png'></a><div class='content'><a class='author'></a><div class='metadata'><span class='date'>Today at 5:42PM</span></div><div class='text'></div><div class='actions'><a class='reply'>Reply</a></div></div></div></div></div>";
+    var doc = new DOMParser().parseFromString(s, "text/xml");
+    console.log(doc.firstChild.firstChild);
+
   }
 }
 
 fetchData();
 setTimeout(maketable, 3000);
 document.getElementById("f").addEventListener('submit', function(evt) {
+  evt.preventDefault();
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;

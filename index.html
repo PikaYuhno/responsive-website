@@ -16,6 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat|Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
   <title>HTML Project</title>
   <style>
     .carousel-control-prev-icon,
@@ -57,15 +58,15 @@
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
             <li><a href="informationen.html" class="link">Informationen</a></li>
-            <li><a href="HTML Aufbau.html" class="link">HTML Aufbau</a></li>
-            <li><a href="" class="link">Tabellen</a></li>
-            <li><a href="" class="link">CSS</a></li>
-            <li><a href="" class="link">Flexbox</a></li>
+            <li><a href="HTML Aufbau.html" class="link">HTML</a><i class="fas fa-caret-down"></i></li>
+            <li><a href="" class="link">CSS</a><i class="fas fa-caret-down"></i></li>
+            <li><a href="" class="link">JavaScript</a></li>
+            <li><a href="" class="link">Bootstrap</a></li>
           </ul>
         </div>
       </div>
       <div class="nav-btns">
-        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact">
+        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact" onclick="location.href='messages.html';">
         <div id="line" style="margin: 0 15px;"></div>
         <i class="fas fa-globe fa-2x" id="globe"></i>
       </div>
@@ -139,8 +140,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="text-center">Algemeine Informationen zu HTML 5</h1>
-            <p class="text-center">
+            <h1 class="text-center" style="font-family: 'Cabin', sans-serif;">Algemeine Informationen zu HTML 5</h1>
+            <p class="text-center" style="font-family: 'Nanum Gothic', sans-serif;">
               HTML steht für Hypertext Markup Language.
               HTML verwendet das ASCII-Format und kann deswegen auf allen Computern verwendet werden.
               HTML ist eine Auszeichnungssprache(Beschreibungssprache für Dokumente), welche aus
@@ -157,39 +158,38 @@
     </article>
     <article class="art-editors">
       <div class="art-editors-titel">
-        <h3 class="text-center">Gute Editoren für HTML</h3>
+        <h3 class="text-center" font-family: 'Cabin' , sans-serif;>Gute Editoren für HTML</h3>
       </div>
       <br> <br>
       <div class="art-editors-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-
-              <img src="resources/imgs/vs-code-logo.png" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-center">Visual Studio Code</h5>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="resources/imgs/vs-code-logo.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">VS Code</h6>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="resources/imgs/atom.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Atom</h6>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="resources/imgs/submile-text-logo.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6 class="card-title text-center">Sublime Text</h6>
+                  </div>
+                </div>
               </div>
-
             </div>
-            <div class="col-md-4">
-
-              <img src="resources/imgs/atom.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Atom</h5>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-
-            </div>
-            <div class="col-md-4">
-
-              <img src="resources/imgs/submile-text-logo.png" class="card-img-top" alt="">
-              <div class="card-body">
-                <h5 class="card-title text-cener">Sublime Text</h5>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-
-            </div>
+          </div>
+          <div class="col-md-4">
           </div>
         </div>
       </div>
@@ -221,10 +221,8 @@
     <form id="f">
       <input type="text" class="in" placeholder="Name" id="name"> <br>
       <input type="text" class="in" placeholder="E-Mail" id="email"> <br>
-      <input type="text" id="area" placeholder="Message" id="message"> <br>
+      <input type="text" class="area" placeholder="Message" id="message"> <br>
       <input type="submit" id="submit">
-
-
     </form>
 
   </section>
