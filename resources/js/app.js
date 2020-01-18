@@ -18,26 +18,42 @@ async function fetchData() {
 function maketable() {
   let table = document.getElementById("table-body");
   for (let i = 0; i < state.data.length; i++) {
-    console.log("TEST");
-    var row = document.createElement("tr");
-    var col1 = document.createElement("td");
-    var col2 = document.createElement("td");
-    var col3 = document.createElement("td");
 
-    row.appendChild(col1);
-    row.appendChild(col2);
-    row.appendChild(col3);
 
-    col1.innerText = state.data[i].name;
-    col2.innerText = state.data[i].email;
-    col3.innerText = state.data[i].message;
+    var comment = document.createElement("div");
+    comment.setAttribute("class", "comment");
+    var avatar = document.createElement("a");
+    avatar.setAttribute("class", "avatar");
+    var profile = document.createElement("img");
+    profile.setAttribute("src", "resources/imgs/profile.png");
+    var content = document.createElement("content");
+    content.setAttribute("class", "content");
+    var author = document.createElement("a");
+    author.setAttribute("class", "author");
+    var metadata = document.createElement("div");
+    metadata.setAttribute("class", "metadata");
+    var date = document.createElement("span");
+    date.setAttribute("class", "date");
+    var text = document.createElement("div");
+    text.setAttribute("class", "text");
 
-    table.appendChild(row);
+    var today = new Date();
+    var time = "Heute um " +today.getHours() + ":" + today.getMinutes();
 
-    var s = "<div class= 'container' style='margin-top: 50px'><div class='ui comments'><h3 class='ui dividing header'>Comments</h3><div class='comment'><a class='avatar'><img src='resources/imgs/profile.png'></a><div class='content'><a class='author'></a><div class='metadata'><span class='date'>Today at 5:42PM</span></div><div class='text'></div><div class='actions'><a class='reply'>Reply</a></div></div></div></div></div>";
-    var doc = new DOMParser().parseFromString(s, "text/xml");
-    console.log(doc.firstChild.firstChild);
+    author.innerText = state.data[i].name;
+    date.innerText = time;
+    text.innerText = state.data[i].message;
 
+    avatar.appendChild(profile);
+    metadata.appendChild(date);
+    content.appendChild(author);
+    content.appendChild(metadata);
+    content.appendChild(text);
+    comment.appendChild(avatar);
+    comment.appendChild(content);
+
+    var t = document.getElementById("com-section");
+    t.appendChild(comment);
   }
 }
 
