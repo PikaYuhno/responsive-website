@@ -1,148 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="resources/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="nav-titel">
-                <h2 style="margin-right: 10px;"><a class="link" href="index.html">HTML</a></h2>
-                <i class="fab fa-html5 fa-2x"></i>
-              </div>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="nav-links">
-                  <ul class="navbar-nav mr-auto">
-                    <li><a href="informationen.html" class="link">Informationen</a></li>
-                    <li><a href="HTML Aufbau.html" class="link">HTML</a><i class="fas fa-caret-down"></i></li>
-                    <li style="cursor: pointer;"><b>CSS</b><i class="fas fa-caret-down"></i></li>
-                    <li><a href="" class="link">JavaScript</a></li>
-                    <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-btns">
-                <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact" onclick="location.href='messages.html';">
-                <div id="line" style="margin: 0 15px;"></div>
-                <i class="fas fa-globe fa-2x" id="globe"></i>
-              </div>
-            </nav>
-        </header>
-        <br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <title>Document</title>
+</head>
 
-        <article>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1>CSS</h1>
-                        <br>
-                        <p>
-                            Css steht für Cascading Stylesheets und ist eine Formatierungssprache, mit deren Hilfe Webseitenentwickler den Inhalt der Webseite von der Darstellung trennen können.
-                            Durch die CSS-Regel wird dem Browser mitgeteilt wie die HTML-Elemente formatiert werden sollen.
-                            Eine CSS-Regel besteht aus dem HTML-Element(Selektor) welches formatiert werden soll und seiner Formatierung(Deklarator).
-                            Der Deklarator besteht aus einer CSS-Eigenschaft und einem Wert, welche durch einen Doppelpunkt getrennt sind.
-                        </p>
-                        <br>
-                        <h3>Arten von Selctoren</h3>
-                        <p>
-                            <h5>Universal-Selektor</h5>
-                            Universal-Selektoren verknüpfen jedes vorhandene Element mit Stylesheetangaben.
-                            <br><br>
-                            <h5>Type-Selektoren</h5>
-                            Typ-Selektoren verknüpfen einen Elementtyp, also ein HTML-Tag mit einer Formatierung. 
-                            <br><br>
-                            <h5>Class-Selektor</h5>
-                            Klassen sind Selektoren mit beliebigen Namen.
-                            <br><br>
-                            <h5>ID-Selerktor</h5>
-                            ID-Selektoren verknüpfen Elemente über das ID-Attribut mit einer Formatierung.
-                        </p>
-                        <br>
-                        <h3>CSS-Notation</h3>
-                        <p>
-                            <h5>Inline-Notation</h5>
-                            Formatierung erfolgt in den HTML-Elementen oder ein Abschnitt wird mittels &lt;span&gt; formatieren. 
-                            Jedoch wird die Inline-Notation sehr schnell unübersichtlich.
-                            <br><br>
-                            <h5>Zentrale Notation</h5>
-                            Das Style-sheet wird zentral im head deklariert.
-                            <br><br>
-                            <h5>Ausgelagerte Notation</h5>
-                            Das Stylesheet wird in einer externen CSS-Datei ausgelagert.
-                            Vorallem wichtig bei Webseiten die aus mehreren Webseiten bestehen, da die Formatierung dann für alle Seiten gleich ist.
-                            Das Stylesheet muss im head der Seite verlinkt werden.
-                        </p>
-                        <br>
-                        <h3>Schriftarten</h3>
-                        <p>
-                            Die dem Browser, über CSS mitgeteilte Schriftart muss am System des Benutzers installiert sein, ansonnsten wird die Stadartschriftart(Times New Roman) verwendet.
-                            Die Schriftfarbe kann mit <b>color</b> geändert werden und die Hintergrundfarbe wird mit <b>backround-color</b> geändert.
-                            Hyperlinks haben vier verschiedene Zustände: noch nicht besucht(a: link), Links, über denen der Curser schwebt (a: hover), Gerade angeklickte Hyperlinks (a: active) und Besuchte Hyperlinks (a: visited).
-                            Alle vier zustände können vormatiert werden.
-                        </p>
-                        <br>
-                        <h3>CSS Einheiten</h3>
-                        <p>
-                            <ul>
-                                <li>Pixel(px)</li>
-                                <li>Punkt(pt)</li>
-                                <li>Pica(pc)</li>
-                                <li>Inch(in)</li>
-                                <li>Milimter(mm)</li>
-                                <li>Zentimeter(cm)</li>
-                                <li>Ems(em)</li>
-                                <li>Exes(ex)</li>
-                                <li>Prozent(%)</li>
-                            </ul>
-                        </p>
-                        <br>
-                        <h3>CSS Positionierung</h3>
-                        <p>
-                            <ul>
-                                <li>static</li>
-                                <li>relativ</li>
-                                <li>absolut</li>
-                                <li>fixed</li>
-                                <li>top</li>
-                                <li>bottom</li>
-                                <li>left</li>
-                                <li>right</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>                      
-        </article>
+<body>
+  <header>
 
-        <br>
-        <!--Footer-->
-        <footer class="text-center border-top border-dark">
-            <br>
-            <p>
-            <a class="link" href="impressum.html">
-                <h5>Impressum</h5>
-            </a>
-            </p>
-            <br>
-        </footer>
-    </body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-titel">
+        <h2 style="margin-right: 10px;"><a class="link" href="index.html">HTML</a></h2>
+        <i class="fab fa-html5 fa-2x"></i>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-links">
+          <ul class="navbar-nav mr-auto">
+            <li><a href="informationen.html" class="link">Informationen</a></li>
+            <li><a href="HTML-Aufbau.html" class="link">HTML</a><i class="fas fa-caret-down"></i></li>
+            <li style="cursor: pointer;"><b>CSS</b><i class="fas fa-caret-down"></i></li>
+            <li><a href="" class="link">JavaScript</a></li>
+            <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact" onclick="location.href='messages.html';">
+        <div id="line" style="margin: 0 15px;"></div>
+        <i class="fas fa-globe fa-2x" id="globe"></i>
+      </div>
+    </nav>
+  </header>
+  <br>
+
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>CSS</h1>
+          <br>
+          <p>
+            Css steht für Cascading Stylesheets und ist eine Formatierungssprache, mit deren Hilfe Webseitenentwickler den Inhalt der Webseite von der Darstellung trennen können.
+            Durch die CSS-Regel wird dem Browser mitgeteilt wie die HTML-Elemente formatiert werden sollen.
+            Eine CSS-Regel besteht aus dem HTML-Element(Selektor) welches formatiert werden soll und seiner Formatierung(Deklarator).
+            Der Deklarator besteht aus einer CSS-Eigenschaft und einem Wert, welche durch einen Doppelpunkt getrennt sind.
+          </p>
+          <br>
+          <h3>Arten von Selctoren</h3>
+          <p>
+            <h5>Universal-Selektor</h5>
+            Universal-Selektoren verknüpfen jedes vorhandene Element mit Stylesheetangaben.
+            <br><br>
+            <h5>Type-Selektoren</h5>
+            Typ-Selektoren verknüpfen einen Elementtyp, also ein HTML-Tag mit einer Formatierung.
+            <br><br>
+            <h5>Class-Selektor</h5>
+            Klassen sind Selektoren mit beliebigen Namen.
+            <br><br>
+            <h5>ID-Selerktor</h5>
+            ID-Selektoren verknüpfen Elemente über das ID-Attribut mit einer Formatierung.
+          </p>
+          <br>
+          <h3>CSS-Notation</h3>
+          <p>
+            <h5>Inline-Notation</h5>
+            Formatierung erfolgt in den HTML-Elementen oder ein Abschnitt wird mittels &lt;span&gt; formatieren.
+            Jedoch wird die Inline-Notation sehr schnell unübersichtlich.
+            <br><br>
+            <h5>Zentrale Notation</h5>
+            Das Style-sheet wird zentral im head deklariert.
+            <br><br>
+            <h5>Ausgelagerte Notation</h5>
+            Das Stylesheet wird in einer externen CSS-Datei ausgelagert.
+            Vorallem wichtig bei Webseiten die aus mehreren Webseiten bestehen, da die Formatierung dann für alle Seiten gleich ist.
+            Das Stylesheet muss im head der Seite verlinkt werden.
+          </p>
+          <br>
+          <h3>Schriftarten</h3>
+          <p>
+            Die dem Browser, über CSS mitgeteilte Schriftart muss am System des Benutzers installiert sein, ansonnsten wird die Stadartschriftart(Times New Roman) verwendet.
+            Die Schriftfarbe kann mit <b>color</b> geändert werden und die Hintergrundfarbe wird mit <b>backround-color</b> geändert.
+            Hyperlinks haben vier verschiedene Zustände: noch nicht besucht(a: link), Links, über denen der Curser schwebt (a: hover), Gerade angeklickte Hyperlinks (a: active) und Besuchte Hyperlinks (a: visited).
+            Alle vier zustände können vormatiert werden.
+          </p>
+          <br>
+          <h3>CSS Einheiten</h3>
+          <p>
+            <ul class="versionen-liste">
+              <li>Pixel(px)</li>
+              <li>Punkt(pt)</li>
+              <li>Pica(pc)</li>
+              <li>Inch(in)</li>
+              <li>Milimter(mm)</li>
+              <li>Zentimeter(cm)</li>
+              <li>Ems(em)</li>
+              <li>Exes(ex)</li>
+              <li>Prozent(%)</li>
+            </ul>
+          </p>
+          <br>
+          <h3>CSS Positionierung</h3>
+          <p>
+            <ul class="versionen-liste">
+              <li>static</li>
+              <li>relativ</li>
+              <li>absolut</li>
+              <li>fixed</li>
+              <li>top</li>
+              <li>bottom</li>
+              <li>left</li>
+              <li>right</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </article>
+
+  <br>
+  <!--Footer-->
+  <footer class="text-center border-top border-dark">
+    <br>
+    <p>
+      <a class="link" href="impressum.html">
+        <h5>Impressum</h5>
+      </a>
+    </p>
+    <br>
+  </footer>
+</body>
+
 </html>

@@ -17,6 +17,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <title>Document</title>
+
+  <style media="screen">
+    @media only screen and (max-width: 500px) {
+      .titel {
+        font-size: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +42,7 @@
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
             <li style="cursor: pointer;"><b>Informationen</b></li>
-            <li><a href="HTML Aufbau.html" class="link">HTML Aufbau</a></li>
+            <li><a href="HTML-Aufbau.html" class="link">HTML Aufbau</a></li>
             <li><a href="" class="link">Tabellen</a></li>
             <li><a href="" class="link">CSS</a></li>
             <li><a href="" class="link">Flexbox</a></li>
@@ -56,7 +64,7 @@
         <div class="row">
           <div class="col-sm-12">
             <br>
-            <h1>Algemeine Informationen zu HTML 5</h1>
+            <h1 class="titel">Algemeine Informationen zu HTML 5</h1>
             <br>
             <p>
               HTML steht für Hypertext Markup Language.
@@ -68,12 +76,12 @@
             <br>
             <h3>Versionen</h3>
             <p>
-              <ol>
+              <ol class="versionen-liste">
                 <li>HTML 1.0</li>
                 <li>HTML 2.0</li>
                 <li>HTML 3.2</li>
                 <li>HTML 4.0 bzw HTML 4.01
-                  <ul>
+                  <ul style="margin-left: 20px;">
                     <li>XHTML 1.0 & 1.1</li>
                     <li>XHTML 2.0</li>
                   </ul>
@@ -84,7 +92,7 @@
             <br>
             <h3>Entwicklungsumgebungen für HTML</h3>
             <p>
-              <ol>
+              <ol class="versionen-liste">
                 <li>Adobe DreamWeaver</li>
                 <li>Brackets</li>
                 <li>JetBrains Webstorm</li>

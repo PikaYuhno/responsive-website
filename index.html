@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="resources/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,7 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-  <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat|Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat|Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet" />
   <title>HTML Project</title>
   <style>
     .carousel-control-prev-icon,
@@ -48,7 +48,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="nav-titel">
-        <h2 style="margin-right: 10px;">HTML</h2>
+        <h2 style="margin-right: 10px;"><a style="color: black; text-decoration: none;" href="index.html">HTML</a></h2>
         <i class="fab fa-html5 fa-2x"></i>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,9 +58,33 @@
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
             <li><a href="informationen.html" class="link">Informationen</a></li>
-            <li><a href="HTML Aufbau.html" class="link">HTML</a><i class="fas fa-caret-down"></i></li>
-            <li><a href="css.html" class="link">CSS</a><i class="fas fa-caret-down"></i></li>
-            <li><a href="" class="link">JavaScript</a></li>
+            <li><a href="HTML-Aufbau.html" class="link">HTML</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="HTML-Aufbau.html">Aufbau</a>
+                  <a class="dropdown-item" href="#">Tabellen</a>
+                  <a class="dropdown-item" href="#">Tags</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="css.html" class="link">CSS</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="sass.html">Sass</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="javascript.html" class="link">JavaScript</a></li>
             <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
           </ul>
         </div>
@@ -68,7 +92,7 @@
       <div class="nav-btns">
         <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact" onclick="location.href='messages.html';">
         <div id="line" style="margin: 0 15px;"></div>
-        <i class="fas fa-globe fa-2x" id="globe"></i>
+        <i class="fab fa-github fa-2x" id="globe" onclick="location.href='https://github.com/PikaYuhno/tinf-projekt';"></i>
       </div>
     </nav>
   </header>
@@ -87,12 +111,9 @@
             <article class="art-home">
               <div class="sec-html">
                 <h4>HTML</h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                  sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                  et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
-                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF">
+                <p>Die Hypertext Markup Language (englisch für Hypertext-Auszeichnungssprache), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und anderen
+                  Inhalten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt.</p>
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF" onclick="location.href = 'https://de.wikipedia.org/wiki/Hypertext_Markup_Language';">
               </div>
               <img src="resources/imgs/html5.png" alt="HTML pic" class="carousel-container">
             </article>
@@ -101,12 +122,9 @@
             <article class="art-home">
               <section class="sec-html">
                 <h4>CSS</h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                  sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                  et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
-                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF">
+                <p>Cascading Style Sheets für gestufte Gestaltungsbögen), kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des
+                  World Wide Webs. Sie ist ein sogenannter „living standard“ (lebendiger Standard) und wird vom World Wide Web Consortium (W3C) beständig weiterentwickelt. </p>
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF" onclick="location.href = 'https://de.wikipedia.org/wiki/Cascading_Style_Sheets';">
               </section>
               <img src="resources/imgs/css-logo.png" alt="HTML pic" class="carousel-container">
             </article>
@@ -115,12 +133,9 @@
             <article class="art-home">
               <section class="sec-html">
                 <h4>JavaScript</h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                  sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                  magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                  et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                  no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
-                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF">
+                <p>JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so
+                  die Möglichkeiten von HTML und CSS zu erweitern</p>
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF" onclick="location.href = 'https://de.wikipedia.org/wiki/JavaScript';">
               </section>
               <img src="resources/imgs/js-logo.png" alt="HTML pic" class="carousel-container">
             </article>
@@ -149,8 +164,7 @@
               Das W3-Consortium ist für die Entwicklung verantwortlich.
             </p>
             <p class="text-center">
-              <input class="btn btn-outline-primary" type="button" href="" value="Mehr Erfahren" />
-
+              <input class="btn btn-outline-primary" type="button" value="Mehr Erfahren" id="btnME">
             </p>
           </div>
         </div>
@@ -158,7 +172,7 @@
     </article>
     <article class="art-editors">
       <div class="art-editors-titel">
-        <h3 class="text-center" font-family: 'Cabin' , sans-serif;>Gute Editoren für HTML</h3>
+        <h3 class="text-center" style="font-family: 'Cabin' , sans-serif;">Gute Editoren für HTML</h3>
       </div>
       <br> <br>
       <div class="art-editors-main">
@@ -195,6 +209,10 @@
       </div>
     </article>
   </main>
+
+  <div class="hori-line">
+
+  </div>
 
   <section id="contact" class="contact">
     <h2>Contact</h2>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat|Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
+  <title>Sass</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-titel">
+        <h2 style="margin-right: 10px;">HTML</h2>
+        <i class="fab fa-html5 fa-2x"></i>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-links">
+          <ul class="navbar-nav mr-auto">
+            <li><a href="informationen.html" class="link">Informationen</a></li>
+            <li><a href="HTML-Aufbau.html" class="link">HTML</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="HTML Aufbau.html">Aufbau</a>
+                  <a class="dropdown-item" href="#">Tabellen</a>
+                  <a class="dropdown-item" href="#">Tags</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="css.html" class="link">CSS</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="" class="link">JavaScript</a></li>
+            <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact" onclick="location.href='messages.html';">
+        <div id="line" style="margin: 0 15px;"></div>
+        <i class="fas fa-globe fa-2x" id="globe"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Sass</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </section>
+    <article class="art-sass">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Sass</h1>
+            <p>Sass (Syntactically Awesome Stylesheets) ist eine Stylesheet-Sprache, die als CSS-Präprozessor mit Variablen, Schleifen und vielen anderen Funktionen, die Cascading Style Sheets (CSS) nicht mitbringen, die Erstellung von CSS
+              vereinfacht und die Pflege großer Stylesheets erleichtert. Sie wurde ursprünglich beeinflusst von der Auszeichnungssprache YAML, von Hampton Catlin entworfen und von Natalie Weizenbaum entwickelt.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!--Footer-->
+  <footer class="text-center border-top border-dark">
+    <br>
+    <p>
+      <a class="link" href="impressum.html">
+        <h5>Impressum</h5>
+      </a>
+    </p>
+    <br>
+  </footer>
+
+</body>
+
+</html>

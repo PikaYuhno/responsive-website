@@ -19,7 +19,6 @@ function maketable() {
   let table = document.getElementById("table-body");
   for (let i = 0; i < state.data.length; i++) {
 
-
     var comment = document.createElement("div");
     comment.setAttribute("class", "comment");
     var avatar = document.createElement("a");
