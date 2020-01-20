@@ -18,6 +18,21 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat|Nanum+Gothic|Open+Sans&display=swap" rel="stylesheet">
   <title>Sass</title>
+  <style media="screen">
+    table {
+      border-collapse: collapse;
+      border-radius: 4px;
+      border-style: hidden;
+      /* hide standard table (collapsed) border */
+      box-shadow: 0 0 0 1px #666;
+      /* this draws the table border  */
+      width: 50%;
+    }
+
+    td {
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 
 <body>
@@ -77,20 +92,37 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Sass</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+        <p class="lead text-muted">Sass (Syntactically Awesome Stylesheets) ist eine Stylesheet-Sprache, die als CSS-Präprozessor mit Variablen, Schleifen und vielen anderen Funktionen, die Cascading Style Sheets (CSS) nicht mitbringen, die
+          Erstellung von CSS
+          vereinfacht und die Pflege großer Stylesheets erleichtert.</p>
       </div>
     </section>
     <article class="art-sass">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <h1>Sass</h1>
-            <p>Sass (Syntactically Awesome Stylesheets) ist eine Stylesheet-Sprache, die als CSS-Präprozessor mit Variablen, Schleifen und vielen anderen Funktionen, die Cascading Style Sheets (CSS) nicht mitbringen, die Erstellung von CSS
-              vereinfacht und die Pflege großer Stylesheets erleichtert. Sie wurde ursprünglich beeinflusst von der Auszeichnungssprache YAML, von Hampton Catlin entworfen und von Natalie Weizenbaum entwickelt.</p>
+          <div class="col-sm-6">
+            <h3 class="text-center">CSS Syntax</h3>
+            <div style="border: 1px solid black; padding: 10px; border-radius: 4px; height: 150px">
+              <code>
+                body { <br>
+                <span style="margin-left: 15px">font: 100% Helvetica, sans-serif; </span> <br>
+                <span style="margin-left: 15px">color: #333;</span> <br>
+                }
+              </code>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h3 class="text-center">Sass Syntax</h3>
+            <div style="border: 1px solid black; padding: 10px; border-radius: 4px; height: 150px">
+              <code>
+                $font-stack: Helvetica, sans-serif <br>
+                $primary-color: #333 <br>
+
+                body <br>
+                <span style="margin-left: 15px">font: 100% $font-stack </span><br>
+                <span style="margin-left: 15px">color: $primary-color</span>
+              </code>
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +130,7 @@
   </main>
 
   <!--Footer-->
-  <footer class="text-center border-top border-dark">
+  <footer class=" text-center border-top border-dark" id="footer">
     <br>
     <p>
       <a class="link" href="impressum.html">

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="resources/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -77,12 +78,7 @@
                 </button>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="sass.html">Sass</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
                 </div>
-              </div>
             </li>
             <li><a href="javascript.html" class="link">JavaScript</a></li>
             <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
@@ -110,10 +106,11 @@
           <div class="carousel-item active">
             <article class="art-home">
               <div class="sec-html">
-                <h4>HTML</h4>
-                <p>Die Hypertext Markup Language (englisch für Hypertext-Auszeichnungssprache), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente wie Texte mit Hyperlinks, Bildern und anderen
+                <h4 style="font-family: 'Cabin', sans-serif;">HTML</h4>
+                <p style="font-family: 'Nanum Gothic', sans-serif;">Die Hypertext Markup Language (englisch für Hypertext-Auszeichnungssprache), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente
+                  wie Texte mit Hyperlinks, Bildern und anderen
                   Inhalten. HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt.</p>
-                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF" onclick="location.href = 'https://de.wikipedia.org/wiki/Hypertext_Markup_Language';">
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF1" onclick="location.href = 'https://de.wikipedia.org/wiki/Hypertext_Markup_Language';">
               </div>
               <img src="resources/imgs/html5.png" alt="HTML pic" class="carousel-container">
             </article>
@@ -121,10 +118,11 @@
           <div class="carousel-item">
             <article class="art-home">
               <section class="sec-html">
-                <h4>CSS</h4>
-                <p>Cascading Style Sheets für gestufte Gestaltungsbögen), kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des
+                <h4 style="font-family: 'Cabin', sans-serif;">CSS</h4>
+                <p style="font-family: 'Nanum Gothic', sans-serif;">Cascading Style Sheets für gestufte Gestaltungsbögen), kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen
+                  des
                   World Wide Webs. Sie ist ein sogenannter „living standard“ (lebendiger Standard) und wird vom World Wide Web Consortium (W3C) beständig weiterentwickelt. </p>
-                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF" onclick="location.href = 'https://de.wikipedia.org/wiki/Cascading_Style_Sheets';">
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF2" onclick="location.href = 'https://de.wikipedia.org/wiki/Cascading_Style_Sheets';">
               </section>
               <img src="resources/imgs/css-logo.png" alt="HTML pic" class="carousel-container">
             </article>
@@ -132,10 +130,11 @@
           <div class="carousel-item">
             <article class="art-home">
               <section class="sec-html">
-                <h4>JavaScript</h4>
-                <p>JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so
+                <h4 style="font-family: 'Cabin', sans-serif;">JavaScript</h4>
+                <p style="font-family: 'Nanum Gothic', sans-serif;">JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu
+                  verändern, nachzuladen oder zu generieren und so
                   die Möglichkeiten von HTML und CSS zu erweitern</p>
-                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF" onclick="location.href = 'https://de.wikipedia.org/wiki/JavaScript';">
+                <input type="button" class="btn btn-outline-primary" value="Mehr Erfahren" style="width: 400px" id="btnMF3" onclick="location.href = 'https://de.wikipedia.org/wiki/JavaScript';">
               </section>
               <img src="resources/imgs/js-logo.png" alt="HTML pic" class="carousel-container">
             </article>
@@ -218,16 +217,16 @@
     <h2>Contact</h2>
 
     <form id="f">
-      <input type="text" class="in" placeholder="Name" id="name"> <br>
-      <input type="text" class="in" placeholder="E-Mail" id="email"> <br>
-      <input type="text" class="area" placeholder="Message" id="message"> <br>
-      <input type="submit" id="submit">
+      <input type="text" class="in" placeholder="Name" id="name" autocomplete="off"> <br>
+      <input type="text" class="in" placeholder="E-Mail" id="email" autocomplete="off"> <br>
+      <input type="text" class="area" placeholder="Message" id="message" autocomplete="off"> <br>
+      <input type="submit" class="btn btn-outline-primary" id="submit">
     </form>
 
   </section>
 
   <!--Footer-->
-  <footer class="text-center border-top border-dark">
+  <footer class="text-center border-top">
     <br>
     <p>
       <a class="link" href="impressum.html">

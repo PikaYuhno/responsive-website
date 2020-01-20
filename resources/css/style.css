@@ -83,12 +83,32 @@ img {
   width: 500px;
 }
 
-#btnMF:hover {
+#btnMF1:hover {
   background-color: black;
   color: white;
 }
 
-#btnMF {
+#btnMF1 {
+  border-color: black;
+  color: black;
+}
+
+#btnMF2:hover {
+  background-color: black;
+  color: white;
+}
+
+#btnMF2 {
+  border-color: black;
+  color: black;
+}
+
+#btnMF3:hover {
+  background-color: black;
+  color: white;
+}
+
+#btnMF3 {
   border-color: black;
   color: black;
 }
@@ -133,9 +153,14 @@ img {
     box-sizing: border-box;
 }
 
+#submit{
+  color: black;
+  border-color: black;
+}
+
 #submit:hover {
-    background-color: #A9A9A9;
-    cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 .contact .area{
@@ -154,6 +179,14 @@ img {
   margin-right: auto;
 }
 
+#footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
 
 
 @media only screen and (max-width: 991px) {
