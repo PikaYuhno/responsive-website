@@ -34,17 +34,36 @@
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
             <li><a href="informationen.html" class="link">Informationen</a></li>
-            <li style="cursor: pointer;"><b>HTML Aufbau</b></li>
-            <li><a href="" class="link">Tabellen</a></li>
-            <li><a href="" class="link">CSS</a></li>
-            <li><a href="" class="link">Flexbox</a></li>
+            <li><a href="HTML-Aufbau.html" class="link"><b>HTML</b></a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="HTML-Aufbau.html">Aufbau</a>
+                  <a class="dropdown-item" href="HTML-Tabelle.html">Tabellen</a>
+                  <a class="dropdown-item" href="HTML-Tags.html">Tags</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="css.html" class="link">CSS</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="sass.html">Sass</a>
+                </div>
+            </li>
+            <li><a href="javascript.html" class="link">JavaScript</a></li>
+            <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
           </ul>
         </div>
       </div>
       <div class="nav-btns">
-        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact">
+        <input type="button" class="btn btn-outline-primary" id="btnContact" value="Contact" onclick="location.href='messages.html';">
         <div id="line" style="margin: 0 15px;"></div>
-        <i class="fas fa-globe fa-2x" id="globe"></i>
+        <i class="fab fa-github fa-2x" id="globe" onclick="location.href='https://github.com/PikaYuhno/tinf-projekt';"></i>
       </div>
     </nav>
   </header>
@@ -54,19 +73,19 @@
         <div class="row">
           <div class="col-sm-12">
             <br>
-            <h1>HTML Aufbau</h1>
+            <h1 style="font-family: 'Cabin', sans-serif;">HTML Aufbau</h1>
             <br>
             <p>
-              <h3>Tags</h3>
-              HTML Tags stellen die Befehle in HTML dar und bestehen aus einem öffnenden und einem schließenfen Tag.
-              Selbstschließende Tags haben nur Atribute zwischen dem öffneneden und schließenden Tag.
-              Manche Tags müssen bzw. dürfen nicht geschlossen werden.
-              <br>
-              Block-level Elemente(z. B. &lt;div&gt;, &lt;table&gt;, &lt;p&gt;) Erzeugen einen Zeilenumbruch, Inline Elemente(z. B. &lt;span&gt;, &lt;table&gt;, &lt;img&gt;) hingegen erzeugen keinen Zeilenumbruch.
-              In einem Block-level Elements dürfen sich sowohl BLock- als auch Inline Elemente befinden. Jedoch dürfen in einem Inline Element nur weitere Inline Elemente sein. <br>
+              <h3 style="font-family: 'Cabin', sans-serif;">Tags</h3>
+              <p style="font-family: 'Nanum Gothic', sans-serif;">HTML Tags stellen die Befehle in HTML dar und bestehen aus einem öffnenden und einem schließenfen Tag.
+                Selbstschließende Tags haben nur Atribute zwischen dem öffneneden und schließenden Tag.
+                Manche Tags müssen bzw. dürfen nicht geschlossen werden. </p>
+              <p style="font-family: 'Nanum Gothic', sans-serif;">
+                Block-level Elemente(z. B. &lt;div&gt;, &lt;table&gt;, &lt;p&gt;) Erzeugen einen Zeilenumbruch, Inline Elemente(z. B. &lt;span&gt;, &lt;table&gt;, &lt;img&gt;) hingegen erzeugen keinen Zeilenumbruch.
+                In einem Block-level Elements dürfen sich sowohl BLock- als auch Inline Elemente befinden. Jedoch dürfen in einem Inline Element nur weitere Inline Elemente sein.</p>
             </p>
             <p>
-              <h3>Aufbau einer HTML Seite</h3>
+              <h3 style="font-family: 'Cabin', sans-serif;">Aufbau einer HTML Seite</h3>
               <br>
               <table class="code-table">
                 <tbody>
@@ -122,4 +141,5 @@
     <br>
   </footer>
 </body>
+
 </html>

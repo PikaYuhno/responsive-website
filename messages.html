@@ -25,7 +25,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="nav-titel">
-        <h2 style="margin-right: 10px;">HTML</h2>
+        <h2 style="margin-right: 10px;"><a style="color: black; text-decoration: none;" href="index.html">HTML</a></h2>
         <i class="fab fa-html5 fa-2x"></i>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,29 @@
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
             <li><a href="informationen.html" class="link">Informationen</a></li>
-            <li><a href="HTML-Aufbau.html" class="link">HTML</a><i class="fas fa-caret-down"></i></li>
-            <li><a href="" class="link">CSS</a><i class="fas fa-caret-down"></i></li>
-            <li><a href="" class="link">JavaScript</a></li>
-            <li><a href="" class="link">Bootstrap</a></li>
+            <li><a href="HTML-Aufbau.html" class="link">HTML</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="HTML-Aufbau.html">Aufbau</a>
+                  <a class="dropdown-item" href="HTML-Tabelle.html">Tabellen</a>
+                  <a class="dropdown-item" href="HTML-Tags.html">Tags</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="css.html" class="link">CSS</a>
+              <div class="btn-group">
+                <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="sass.html">Sass</a>
+                </div>
+            </li>
+            <li><a href="javascript.html" class="link">JavaScript</a></li>
+            <li><a href="bootstrap.html" class="link">Bootstrap</a></li>
           </ul>
         </div>
       </div>
