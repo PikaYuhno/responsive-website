@@ -49,7 +49,8 @@
 }
 
 #btnContact:active, #btnContact:focus{
-  outline: none;
+     outline: none !important;
+     box-shadow: none;
 }
 
 #btnContact {
@@ -92,6 +93,10 @@ img {
   border-color: black;
   color: black;
 }
+#btnMF1:focus,#btnMF1:active {
+   outline: none !important;
+   box-shadow: none;
+}
 
 #btnMF2:hover {
   background-color: black;
@@ -101,6 +106,10 @@ img {
 #btnMF2 {
   border-color: black;
   color: black;
+}
+#btnMF2:focus,#btnMF2:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
 #btnMF3:hover {
@@ -112,6 +121,10 @@ img {
   border-color: black;
   color: black;
 }
+#btnMF3:focus,#btnMF3:active {
+   outline: none !important;
+   box-shadow: none;
+}
 
 #btnME:hover {
   background-color: black;
@@ -121,6 +134,10 @@ img {
 #btnME{
   border-color: black;
   color: black;
+}
+#btnME:focus,#btnME:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
 .vert-line {
@@ -137,6 +154,7 @@ img {
     border-bottom: 1px solid grey;
     font-family: 'Open Sans', sans-serif;
     height: 500px;
+
 }
 
 .contact form{
@@ -161,6 +179,10 @@ img {
 #submit:hover {
   background-color: black;
   color: white;
+}
+#submit:focus,#submit:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
 .contact .area{

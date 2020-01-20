@@ -79,4 +79,13 @@ document.getElementById("f").addEventListener('submit', function(evt) {
   }).then(res => {
     console.log(res);
   });
+  var notif = document.createElement("div");
+  notif.setAttribute("class", "alert alert-success");
+  notif.setAttribute("role", "alert");
+  notif.innerText = "Message wurde erfolgreich gesendet!";
+  notif.setAttribute("style", "margin-left: auto; margin-right: auto; width: 50%;")
+  document.getElementById("contact").appendChild(notif);
+   document.getElementById("name").value = '';
+  document.getElementById("email").value= '';
+  document.getElementById("message").value = '';
 });
