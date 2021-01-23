@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <!-- jQuery library -->
@@ -16,29 +16,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-  <title>Document</title>
-
-  <style media="screen">
-    @media only screen and (max-width: 500px) {
-      .titel {
-        font-size: 25px;
-      }
-    }
-
-    p,
-    ul,
-    ol {
-      font-family: 'Quicksand', sans-serif;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/semantic-ui/comment.min.css">
+  <title>HTML Project</title>
 </head>
 
 <body>
-  <!-- Navigation -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="nav-titel">
-        <h2 style="margin-right: 10px;"><a style="color: black; text-decoration: none;" href="index.html">HTML</a></h2>
+        <h2 style="margin-right: 10px;"><a style="color: black; text-decoration: none;" href="../index.html">HTML</a></h2>
         <i class="fab fa-html5 fa-2x"></i>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
-            <li><a href="informationen.html" class="link"><b>Informationen</b></a></li>
+            <li><a href="informationen.html" class="link">Informationen</a></li>
             <li><a href="HTML-Aufbau.html" class="link">HTML</a>
               <div class="btn-group">
                 <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,67 +70,12 @@
       </div>
     </nav>
   </header>
-
-  <main>
-    <br>
-    <article>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <br>
-            <h1 class="titel" style="font-family: 'Cabin', sans-serif;">Algemeine Informationen zu HTML 5</h1>
-            <br>
-            <p>
-              HTML steht für Hypertext Markup Language.
-              HTML verwendet das ASCII-Format und kann deswegen auf allen Computern verwendet werden.
-              HTML ist eine Auszeichnungssprache(Beschreibungssprache für Dokumente), welche aus SGML(Standard Generalized Markup Language) enstand und im CERN entwickelt wurde.
-              Das W3-Consortium ist für die Entwicklung verantwortlich.
-              HTML Datein enden auf die Endung .html oder ältere Datein auf .htm.
-            </p>
-            <br>
-            <h3 style="font-family: 'Cabin', sans-serif;">Versionen</h3>
-            <br>
-              <ol class="versionen-liste">
-                <li>HTML 1.0</li>
-                <li>HTML 2.0</li>
-                <li>HTML 3.2</li>
-                <li>HTML 4.0 bzw HTML 4.01
-                  <ul style="margin-left: 20px;">
-                    <li>XHTML 1.0 & 1.1</li>
-                    <li>XHTML 2.0</li>
-                  </ul>
-                </li>
-                <li>HTML 5.0</li>
-              </ol>
-            <br>
-            <br>
-            <h3 style="font-family: 'Cabin', sans-serif;">Entwicklungsumgebungen für HTML</h3>
-            <br>
-              <ol class="versionen-liste">
-                <li>Adobe DreamWeaver</li>
-                <li>Brackets</li>
-                <li>JetBrains Webstorm</li>
-                <li>Microsoft Visual Studio</li>
-                <li>Notepad++</li>
-              </ol>
-            <br>
-          </div>
-        </div>
-      </div>
-    </article>
-  </main>
-  <br><br><br><br><br><br>
-
-  <!--Footer-->
-  <footer class="text-center border-top border-dark">
-    <br>
-    <p>
-      <a class="link" href="impressum.html">
-        Impressum
-      </a>
-    </p>
-    <br>
-  </footer>
+  <div class="container" style="margin-top: 50px">
+    <div class="ui comments" id="com-section">
+      <h3 class="ui dividing header">Messages</h3>
+    </div>
+  </div>
+  <script src="resources/js/app.js"></script>
 </body>
 
 </html>

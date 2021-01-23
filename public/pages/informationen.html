@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <!-- jQuery library -->
@@ -16,31 +16,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" />
-  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-  <title>Sass</title>
+  <title>Document</title>
+
   <style media="screen">
-    table {
-      border-collapse: collapse;
-      border-radius: 4px;
-      border-style: hidden;
-      /* hide standard table (collapsed) border */
-      box-shadow: 0 0 0 1px #666;
-      /* this draws the table border  */
-      width: 50%;
+    @media only screen and (max-width: 500px) {
+      .titel {
+        font-size: 25px;
+      }
     }
 
-    td {
-      border: 1px solid #ccc;
+    p,
+    ul,
+    ol {
+      font-family: 'Quicksand', sans-serif;
     }
   </style>
 </head>
 
 <body>
+  <!-- Navigation -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="nav-titel">
-        <h2 style="margin-right: 10px;"><a style="color: black; text-decoration: none;" href="index.html">HTML</a></h2>
+        <h2 style="margin-right: 10px;"><a style="color: black; text-decoration: none;" href="../index.html">HTML</a></h2>
         <i class="fab fa-html5 fa-2x"></i>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +47,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="nav-links">
           <ul class="navbar-nav mr-auto">
-            <li><a href="informationen.html" class="link">Informationen</a></li>
+            <li><a href="informationen.html" class="link"><b>Informationen</b></a></li>
             <li><a href="HTML-Aufbau.html" class="link">HTML</a>
               <div class="btn-group">
                 <button type="button" class="fas fa-caret-down" style="background-color: transparent; border: none;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,46 +84,54 @@
   </header>
 
   <main>
-    <section class="jumbotron text-center">
+    <br>
+    <article>
       <div class="container">
-        <h1 class="jumbotron-heading">Sass</h1>
-        <p class="lead text-muted">Sass (Syntactically Awesome Stylesheets) ist eine Stylesheet-Sprache, die als CSS-Präprozessor mit Variablen, Schleifen und vielen anderen Funktionen, die Cascading Style Sheets (CSS) nicht mitbringen, die
-          Erstellung von CSS
-          vereinfacht und die Pflege großer Stylesheets erleichtert.</p>
-      </div>
-    </section>
-    <article class="art-sass">
-      <div class="container">
-        <div class="row" style="margin-bottom: 20px;">
-          <div class="col-sm-6">
-            <h3 class="text-center">CSS Syntax</h3>
-            <div style="border: 1px solid black; padding: 10px; border-radius: 4px; height: 150px">
-              <code>
-                body { <br>
-                <span style="margin-left: 15px">font: 100% Helvetica, sans-serif; </span> <br>
-                <span style="margin-left: 15px">color: #333;</span> <br>
-                }
-              </code>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h3 class="text-center">Sass Syntax</h3>
-            <div style="border: 1px solid black; padding: 10px; border-radius: 4px; height: 150px">
-              <code>
-                $font-stack: Helvetica, sans-serif <br>
-                $primary-color: #333 <br>
-
-                body <br>
-                <span style="margin-left: 15px">font: 100% $font-stack </span><br>
-                <span style="margin-left: 15px">color: $primary-color</span>
-              </code>
-            </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <br>
+            <h1 class="titel" style="font-family: 'Cabin', sans-serif;">Algemeine Informationen zu HTML 5</h1>
+            <br>
+            <p>
+              HTML steht für Hypertext Markup Language.
+              HTML verwendet das ASCII-Format und kann deswegen auf allen Computern verwendet werden.
+              HTML ist eine Auszeichnungssprache(Beschreibungssprache für Dokumente), welche aus SGML(Standard Generalized Markup Language) enstand und im CERN entwickelt wurde.
+              Das W3-Consortium ist für die Entwicklung verantwortlich.
+              HTML Datein enden auf die Endung .html oder ältere Datein auf .htm.
+            </p>
+            <br>
+            <h3 style="font-family: 'Cabin', sans-serif;">Versionen</h3>
+            <br>
+              <ol class="versionen-liste">
+                <li>HTML 1.0</li>
+                <li>HTML 2.0</li>
+                <li>HTML 3.2</li>
+                <li>HTML 4.0 bzw HTML 4.01
+                  <ul style="margin-left: 20px;">
+                    <li>XHTML 1.0 & 1.1</li>
+                    <li>XHTML 2.0</li>
+                  </ul>
+                </li>
+                <li>HTML 5.0</li>
+              </ol>
+            <br>
+            <br>
+            <h3 style="font-family: 'Cabin', sans-serif;">Entwicklungsumgebungen für HTML</h3>
+            <br>
+              <ol class="versionen-liste">
+                <li>Adobe DreamWeaver</li>
+                <li>Brackets</li>
+                <li>JetBrains Webstorm</li>
+                <li>Microsoft Visual Studio</li>
+                <li>Notepad++</li>
+              </ol>
+            <br>
           </div>
         </div>
       </div>
     </article>
-  </main> <br> <br> <br>
-
+  </main>
+  <br><br><br><br><br><br>
 
   <!--Footer-->
   <footer class="text-center border-top border-dark">
@@ -137,7 +143,6 @@
     </p>
     <br>
   </footer>
-
 </body>
 
 </html>
